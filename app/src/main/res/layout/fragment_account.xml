@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fragmentAccount"
+    android:background="@color/biruUB"
+    tools:context=".account_fragment">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/profile"
+                android:id="@+id/imageProfile"
+                app:civ_border_color="@color/kuningUB"
+                app:civ_border_width="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColorHighlight="@color/biruUB"
+                android:text="Nama User "
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/namaUser"
+                android:textColorHighlight="@color/biruUB"
+                android:text="Nama"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColorHighlight="@color/biruUB"
+                android:text="Email User "
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/emailUser"
+                android:textColorHighlight="@color/biruUB"
+                android:text="Email"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <Button
+                android:id="@+id/logOut"
+                android:textSize="18dp"
+                android:textColor="@color/putih"
+                android:text="Sign Out"
+                android:background="@drawable/button_confirm"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:layout_width="220dp"
+                android:layout_height="45dp">
+            </Button>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+            </ImageView>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/biruUB"
+                    android:textSize="30dp"
+                    android:text="Brawijaya Funeral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:layout_gravity="center"
+            android:hint="Username"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+        </EditText>
+        <EditText
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+        </EditText>
+        <Button
+            android:id="@+id/login"
+            android:textSize="20dp"
+            android:textColor="@color/putih"
+            android:text="Login"
+            android:background="@drawable/button_login"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+        </Button>
+
+<!--        <com.google.android.gms.common.SignInButton-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/googleLogin"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </com.google.android.gms.common.SignInButton>-->
+        <Button
+            android:id="@+id/googleLogin"
+            android:drawablePadding="20dp"
+            android:paddingLeft="10dp"
+            android:drawableStart="@drawable/google_logo"
+            android:gravity="left|center_vertical"
+            android:textSize="15dp"
+            android:textColor="@color/putih"
+            android:text="Sign In With Google"
+            android:background="@drawable/button_google"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+        </Button>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

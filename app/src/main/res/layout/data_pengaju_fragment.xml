@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    tools:context=".data_pengaju_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/menu_pengajuan_shape"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Pengisian Data Ahli Waris"
+                android:textStyle="bold"
+                android:textColor="@color/item"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@color/orange"
+                android:layout_width="3dp"
+                android:layout_height="50dp">
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/nama_pengaju"
+                android:textColorHighlight="@color/biruUB"
+                android:hint="Nama Ahli Waris"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/pekerjaan"
+                android:textColorHighlight="@color/biruUB"
+                android:hint="Pekerjaan"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/no_telp"
+                android:inputType="number"
+                android:textColorHighlight="@color/biruUB"
+                android:hint="Nomor Telepon/HP"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/alamat_pengaju"
+                android:hint="Alamat Rumah"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="4"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical">
+            </EditText>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_width="300dp"
+                android:layout_height="70dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Status Ahli Waris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <RadioGroup
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/radio_group_pengaju"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <RadioButton
+                        android:id="@+id/istri"
+                        android:text="Istri"
+                        android:checked="true"
+                        android:theme="@style/radiobuttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/suami"
+                        android:text="Suami"
+                        android:theme="@style/radiobuttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/anak"
+                        android:text="Anak"
+                        android:theme="@style/radiobuttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+            <Button
+                android:id="@+id/confirm"
+                android:textSize="18dp"
+                android:textColor="@color/putih"
+                android:text="Berikutnya"
+                android:background="@drawable/button_confirm"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

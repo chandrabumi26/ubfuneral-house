@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    tools:context=".data_pengaju_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@drawable/menu_pengajuan_shape"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:text="Pengisian Jenazah"
+                android:textStyle="bold"
+                android:textColor="@color/item"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@color/orange"
+                android:layout_width="3dp"
+                android:layout_height="50dp">
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/nama_jenazah1"
+                android:textColorHighlight="@color/biruUB"
+                android:hint="Nama Jenazah"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/alamat_jenazah"
+                android:hint="Alamat Jenazah"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="4"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scrollbars="vertical">
+            </EditText>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_width="300dp"
+                android:layout_height="70dp">
+                <TextView
+                    android:textColor="@color/item"
+                    android:textSize="16dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Jenis Kelamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <RadioGroup
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/radio_group_jenazah"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <RadioButton
+                        android:id="@+id/laki2"
+                        android:text="Laki - Laki"
+                        android:checked="true"
+                        android:theme="@style/radiobuttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                    <RadioButton
+                        android:id="@+id/perempuan"
+                        android:text="Perempuan"
+                        android:theme="@style/radiobuttonstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/item"
+                        android:textSize="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Tanggal Lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <Button
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:drawableEnd="@drawable/dropdown"
+                        android:background="@color/putih"
+                        android:editable="false"
+                        android:id="@+id/date_lahir"
+                        android:hint="Lahir"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content">
+                    </Button>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/item"
+                        android:textSize="16dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Tanggal Kematian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <Button
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:drawableEnd="@drawable/dropdown"
+                        android:background="@color/putih"
+                        android:editable="false"
+                        android:id="@+id/date_kematian"
+                        android:hint="Kematian"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content">
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/item"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Keluarga Besar Fakultas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <Spinner
+                android:id="@+id/fakultas"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/item"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Tanggal Pemakaman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:drawableEnd="@drawable/dropdown"
+                android:background="@color/putih"
+                android:editable="false"
+                android:id="@+id/date_pemakaman"
+                android:hint="Pemakaman"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+            </Button>
+
+            <Button
+                android:id="@+id/confirm_jnzh"
+                android:textSize="18dp"
+                android:textColor="@color/putih"
+                android:text="Konfirmasi"
+                android:background="@drawable/button_confirm"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+            </Button>
+
+            <Button
+                android:id="@+id/swipeBack"
+                android:textSize="18dp"
+                android:textColor="@color/putih"
+                android:text="Sebelumnya"
+                android:background="@drawable/button_back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

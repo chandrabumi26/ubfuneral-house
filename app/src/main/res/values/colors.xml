@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#03506f</color>
+    <color name="colorAccent">#ffc93c</color>
+    <color name="background">#5c6e91</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="item">#222831</color>
+    <color name="biruUB">#00416d</color>
+    <color name="biruGoogle">#4285F4</color>
+    <color name="kuningUB">#ffc93c</color>
+    <color name="orange">#f5b461</color>
+    <color name="abu_abu">#bbbfca</color>
+    <color name="garis">#d6d2c4</color>
+    <color name="baris">#fff5ea</color>
+    <color name="homeColor">#eeeeee</color>
+</resources>

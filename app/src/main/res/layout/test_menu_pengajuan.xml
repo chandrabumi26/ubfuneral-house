@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/home_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Test_menu_pengajuan">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarPengajuan"-->
+<!--        android:background="@drawable/home_background"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
+<!--        <LinearLayout-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            -->
+<!--        </LinearLayout>-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/backButton"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp">
+        </Button>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/putih"
+            android:layout_gravity=""
+            android:text="Menu Pengajuan"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutPengajuan"
+        app:tabTextColor="@color/putih"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPengaju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Pengaju" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabJenazah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Jenazah" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">UBFuneralHouse</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="clientId">429163351314-gm9pgmnvvcrdrbb5nsl5s83n7l4kp69p.apps.googleusercontent.com</string>
+    <string name="invalid_nama_pengaju">Mohon untuk dimasukan dengan benar</string>
+    <string name="invalid_name">Mohon dimasukan dengan benar</string>
+    <string-array name="fakultas">
+        <item>Fakultas Kedokteran</item>
+        <item>Fakultas Kedokteran Gigi</item>
+        <item>Fakultas Kedokteran Hewan</item>
+        <item>Fakultas Ilmu Komputer</item>
+        <item>Fakultas Teknologi Pertanian</item>
+        <item>Fakultas Pertanian</item>
+        <item>Fakultas Perikanan dan Ilmu Kelautan</item>
+        <item>Fakultas Peternakan</item>
+        <item>Fakultas Teknik</item>
+        <item>Fakultas Hukum</item>
+        <item>Fakultas Ilmu Budaya</item>
+        <item>Fakultas Ilmu Sosial dan Politik</item>
+        <item>Fakultas Ilmu Administrasi</item>
+        <item>Fakultas Ekonomi dan Bisnis</item>
+        <item>Vokasi</item>
+    </string-array>
+</resources>

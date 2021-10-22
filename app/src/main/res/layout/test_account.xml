@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/putih"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account_fragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/home_background"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:src="@drawable/profile"
+            android:id="@+id/imageProfile"
+            app:civ_border_color="@color/putih"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/namaUser"
+            android:textColor="@color/putih"
+            android:text="Dorojatun Chandrabumi"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:id="@+id/logOut"
+            android:textSize="18dp"
+            android:textColor="@color/item"
+            android:text="Keluar"
+            android:layout_gravity="center"
+            android:background="@drawable/button_signout"
+            android:layout_width="200dp"
+            android:layout_height="55dp">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="Email"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/biruUB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/emailUser"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="chandra.bumi@gmail.com"
+            android:textColor="@color/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/abu_abu"
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="Nomor Telepon"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/biruUB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/nomor_telepon"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="085882657258"
+            android:textColor="@color/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/abu_abu"
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="Alamat"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/biruUB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:id="@+id/alamat_user"
+            android:textColor="@color/item"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:maxLines="4"
+            android:lines="3"
+            android:text="Jl. Garuda Blok A34 No 11-12 Rt 04 Rw 07 Kunciran Indah, Kecamatan Pinang, Tangerang, Banten 15144">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/abu_abu"
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>
